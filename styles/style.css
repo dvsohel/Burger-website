@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;   
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*COMMON CSS*/
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.txt-pm {
+    color: #ecad2f;
+}
+.btn-pm {
+    font-size: 20px;
+    font-weight: 600;
+    background: #c46183;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 35px;
+    cursor: pointer;
+}
+.btn-pm:hover {
+    font-size: 20px;
+    font-weight: 600;
+    background: #6d1f3a;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 35px;
+    cursor: pointer;
+}
+.btn-sc {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #ffffff;
+    border: 0;
+    border-radius: 5px;
+    color: black;
+    padding: 15px 35px;
+    cursor: pointer;
+    border: 1.5px solid black;
+}
+.btn-sc:hover {
+    font-size: 20px;
+    font-weight: 600;
+    background: black;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 35px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.cmn-heading {
+    font-size: 35px;
+    font-weight: 700;
+    color: #181818;
+    text-transform: uppercase;
+}
+
+/* NAV CSS */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-content: center;
+}
+.nav-tittle {
+    font-size: 45px;
+    font-weight: 800;
+    color: #ffffff;
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+nav ul li a {
+    font-size: 25px;
+    font-weight: 600;
+    color: #ffffff; 
+}
+nav .signin-link img {
+    width: 25px;
+    height: auto;
+    fill: #ffffff;
+}
+nav .signin-link {
+    display: flex;
+    gap: 15px;
+}
+nav .signin-link span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+
+}
+
+/* HEADER CSS*/
+.header {
+    background-color: #303c47;
+    padding-top: 30px;
+    height: 100vh;
+}
+
+.banner-section .main-column {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 0;
+    align-content: center;
+    padding-top: 100px;
+}
+.banner-section img {
+    width: 550px;
+    height: aut0;
+}
+.banner-section .left-column {
+    width: 585px;
+}
+
+.banner-section h3 {
+    font-size: 45px;
+    color: #ecad2f;
+    margin: 0;
+    padding: 0;
+}
+.banner-section h1 {
+    font-size: 70px;
+    font-weight: bold;
+    /* color: #ecad2f; */
+    color: #ffffff;
+    padding: 20px 0px 35px 0px;
+    line-height: 78px;
+}
+.banner-section span {
+    color: #181818;
+    font-style: oblique;
+}
+
+.banner-section .btn-secondary {
+        background: white;
+        color: black;
+        border: 1px solid #00000029;
+        cursor: pointer;
+}
+.banner-section .btn-secondary:hover {
+    background: #FD6E0A;
+    color:  #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+/*SHAKE CSS*/
+.shake {
+    padding: 60px 0;
+    background-color: #ecad2f;
+}
+
+.shake p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #181818;
+    padding: 30px 0;
+}
+.shake h4 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #757575;
+    /* padding: 30px 0; */
+}
+.shake img {
+    width: 100%;
+}
+.shake .main-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #ffffff;
+    margin:  auto;
+    padding: 80px 8px;
+    border-radius: 10px;
+    align-items: center;
+    column-gap: 20px;
+}
+.shake .right-column {
+    padding-right: 30px;
+}
+.shake .btn {
+    display: flex;
+    column-gap: 25px;
+}
+
+/*FOOD-MENU  CSS*/
+.food-menu .heding {
+    text-align: center;
+}
+.food-menu {
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+.food-menu h4 {
+    font-style: italic;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.food-menu .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+.food-menu img {
+    /* display: block; */
+    width: 100%;
+}
+.food-menu .item {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 50px 0px rgb(0, 0, 0, 0.06);
+
+}
+
+/*OUR CARFT CSS*/
+.our-carft {
+    padding: 30px 0;
+    background-color: #ffffff;
+}
+
+.our-carft p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #181818;
+    padding: 10px 0;
+}
+.our-carft img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.our-carft .main-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #ffffff;
+    margin:  auto;
+    padding: 80px 8px;
+    border-radius: 10px;
+    /* align-items: center; */
+    column-gap: 90px;
+}
+
+
+.our-carft .new-p {
+    padding: 0 !important;
+    margin-bottom: 20px;
+ }
+
+
+
+/* CONTACT FROM CSS*/
+.contact {
+    background-color: #FFF8F3;
+}
+.contact .main-column {
+    display: flex;
+    gap: 50px;
+    padding: 100px 0px;
+}
+.contact .left-column {
+    max-width: 565px;
+}
+.contact .right-column input[type="text"], input[type="email"], textarea {
+    display: block;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 5px;
+    color: #757575;
+    padding: 18px 35px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.contact .right-column {
+    width: 100%;
+    padding-left: 30px;
+}
+.contact h2 {
+    padding-bottom: 30px;
+}
+.contact .btn-secondary {
+    background: white;
+    color: black;
+    border: 1px solid #00000029;
+    cursor: pointer;
+}
+.contact .btn-secondary:hover {
+    background: #FD6E0A;
+    color:  #ffffff;
+    border: 0;
+    cursor: pointer;
+}
+.contact .social-links {
+    padding-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+.contact .copy-right {
+    text-align: center;
+    padding: 25px;
+    background-color: #303c47;
+    color: #ffffff;
+}
