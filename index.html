@@ -13,22 +13,24 @@
 </head>
 <body>
     <header class="header">
-        <nav>
-            <h3 class="nav-tittle">Bu<span class="txt-pm">r</span>ger</h3>
-            <ul>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Rewards</a></li>
-                <!-- <li><a href="#">Deals</a></li> -->
-                <li><a href="#">Nutrition</a></li>
-                <li><a href="#">Locations</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="signin-link">
-                <a href="#"><span>Sign in</span></a>
-                <a href="#"><img src="./images/icons/user.svg" alt="user-icon"></a>
-                <a href="#"><img src="./images/icons/shopping-cart.svg" alt="shoping-icon"></a>
-            </div>
-        </nav>
+        
+            <nav>
+                <h3 class="nav-tittle">Bu<span class="txt-pm">r</span>ger</h3>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#">Rewards</a></li>
+                    <!-- <li><a href="#">Deals</a></li> -->
+                    <li><a href="#nutrition">Nutrition</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#contact-us">Contact</a></li>
+                </ul>
+                <div class="signin-link">
+                    <a href="#"><span>Sign in</span></a>
+                    <a href="#"><img src="./images/icons/user.svg" alt="user-icon"></a>
+                    <a href="#"><img src="./images/icons/shopping-cart.svg" alt="shoping-icon"></a>
+                </div>
+            </nav>
+        
 
         <section class="banner-section">
             <div class="container">
@@ -49,7 +51,7 @@
     </header>
 
     <!-- SHAKE SECTION-->
-     <section class="about-me shake">
+     <section class="shake" id="nutrition">
         <div class="container">
             <div class="main-column">
                 <div class="left-column">
@@ -68,7 +70,7 @@
         </div>
      </section>
 
-     <!-- WHAT I DO SECTION-->
+     <!-- FOOD-MENU SECTION-->
      <section class="food-menu" id="menu">
         <div class="container">
             <div class="main">
@@ -131,7 +133,7 @@
      </section>
 
     <footer>
-        <section class="contact">
+        <section class="contact" id="contact-us">
             <div class="container">
                 <div class="main-column">
                     <div class="left-column">
@@ -149,7 +151,7 @@
                             <input type="text" name="" id="" placeholder="Your Name">
                             <input type="email" name="" id="" placeholder="Your Email">
                             <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                            <input class="btn-pm btn-secondary" type="button" value="Submit">
+                            <input class="btn-sc" type="button" value="Submit">
                         </form>
                     </div>
                 </div>
@@ -159,5 +161,13 @@
             </div>
         </section>
     </footer>
+
+<script>
+    window.addEventListener("scroll", function(){
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("sticky", window.scrollY > 0);
+    })
+</script>
+
 </body>
 </html>

@@ -76,12 +76,25 @@ body{
 }
 
 /* NAV CSS */
+/* .sticky {
+    
+} */
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0px 30px;
     align-content: center;
+    transition: 0.6s;
+}
+nav.sticky {
+    padding-top: 4px;
+    padding-bottom: 7px;
+    background: #303c47;
 }
 .nav-tittle {
     font-size: 45px;
@@ -96,8 +109,20 @@ nav ul {
 nav ul li a {
     font-size: 25px;
     font-weight: 600;
-    color: #ffffff; 
+    color: #ffffff;
+    letter-spacing: 2px;
+    transition: 0.6s; 
 }
+nav ul li a:hover {
+    font-size: 25px;
+    font-weight: 600;
+    color: #c46183; 
+}
+/* nav ul li a:active {
+    font-size: 25px;
+    font-weight: 600;
+    color: #ecad2f; 
+} */
 nav .signin-link img {
     width: 25px;
     height: auto;
